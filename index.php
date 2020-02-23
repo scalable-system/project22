@@ -13,8 +13,8 @@
 
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
         <p>Whatever you enter here will be inserted in the excel</p>
-        <input class="form-control" type="text" name="value" id="value" placeholder="enter something"onclick="stringlength(document.form1.text1,10,200)" oninput="onInput(this.id, this.id+'Output');">
-        <input class="form-control" type="text" name="cell" id="value1" placeholder="enter the cell" onclick="stringlength(document.form1.text1,1,20)" oninput="onInput(this.id, this.id+'Output');">
+        <input class="form-control" type="text" name="value" id="value" placeholder="enter something"oninput="onInput(this.id, this.id+'Output');">
+        <input class="form-control" type="text" name="cell" id="value1" placeholder="enter the cell" oninput="onInput(this.id, this.id+'Output');">
         <input type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
     </form>
     
