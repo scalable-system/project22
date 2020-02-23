@@ -1,3 +1,4 @@
+<?php include '../back-end/functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,8 +20,8 @@
           <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
             <p>Whatever you enter here will be inserted in the excel</p>
             <input class="form-control" type="text" name="product-title-1" id="product-title-1" placeholder="Product Title" onclick="stringlength(document.form1.text1,10,200)" onkeyup="document.getElementById('productOutput').innerHTML = this.value">
-            <input class="form-control" type="text" name="quantity-1" id="quantity-1" placeholder="Quantity" onclick="stringlength(document.form1.text1,1,20)" onkeyup="document.getElementById('quantityOutput').innerHTML = this.value">
-            <input type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
+            <input class="form-control" type="number" name="quantity-1" id="quantity-1" placeholder="Quantity" onclick="stringlength(document.form1.text1,1,20)" onkeyup="document.getElementById('quantityOutput').innerHTML = this.value">  
+            <input type="submit" class="btn btn-primary btn-lg btn-block" name="submit" value="submit">
         </form>
         </div>
         <div class="col-sm-6">
@@ -36,3 +37,26 @@
 
   </body>
 </html>
+
+<?php
+
+if(isset($_POST['submit'])){
+
+    // define variables and set to empty values
+  $product_title_1_php = $quantity_1_php = "";
+  $reload = '<script>alert("Please check your inputs!");</script>';
+
+  $product_title_1_php = test_input($_POST["product-title-1"]);
+  if(!(validStrLen($product_title_1_php, 10, 200, false))){
+      echo $reload;
+  }
+
+  $quantity_1_php = test_input($_POST["quantity-1"]);
+  if(!(validNum($quantity_1_php, 15, 20, true))){
+      echo $reload;
+  }
+  
+
+}
+
+?>
