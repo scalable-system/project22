@@ -1,3 +1,9 @@
-# project22
+# Project 22 Official Repository
 
-Excel Product Inserting Program
+This repository contains work for an current internal system
+
+
+Credits:
+assaadah
+DinShpati
+TAHIDUR
