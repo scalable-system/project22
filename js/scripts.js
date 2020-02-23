@@ -11,7 +11,7 @@ return false;
 }
 else
 { 
-alert('Your userid have accepted.');
+alert('Good');
 return true;
 }
 }
