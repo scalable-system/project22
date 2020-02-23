@@ -1,17 +1,15 @@
-function stringlength(inputtxt, minlength, maxlength)
-{ 
-var field = inputtxt.value; 
-var mnlen = minlength;
-var mxlen = maxlength;
+function filter() {
+    
+    var product = document.getElementById('product-title-1').value;
+    var quantity = document.getElementById('quantity-1').value;
 
-if(field.length<mnlen || field.length> mxlen)
-{ 
-alert("Please input the userid between " +mnlen+ " and " +mxlen+ " characters");
-return false;
-}
-else
-{ 
-alert('Good');
-return true;
-}
+    proSize = product.length;
+    quantitySize = quantity.length;
+    
+    if(proSize < 10 || proSize > 200 || quantitySize <0 || quantitySize > 20 )
+        alert("bad");
+    else
+        alert("good");
+        var product_title_1_js = product;
+        var product_title_1_js = quantity;
 }
