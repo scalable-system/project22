@@ -22,9 +22,26 @@
             <input class="form-control" type="number" name="quantity-1" id="quantity-1" placeholder="Quantity"  onkeyup="document.getElementById('quantityOutput').innerHTML = this.value ">
             <input onclick="filter()"  type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
         </form>
+          
+        <form>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          </form>
+          
         </div>
         <div class="col-sm-6">
-          <h3 id="productOutput"></h3>
+          <h3>Product Title</h3>
+          <p id="productOutput"></p>
           <h3 id="quantityOutput"></h3>
         </div>
         <h3 id="Alert"></h3>
