@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Excel Write</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<![if gt IE 9]>
+<script type="text/javascript" src="//unpkg.com/xlsx/dist/shim.min.js"></script>
+<script type="text/javascript" src="//unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+<![endif]>
+<!--[if lte IE 9]>
+<script type="text/javascript" src="shim.min.js"></script>
+<script type="text/javascript" src="xlsx.full.min.js"></script>
+<![endif]-->
+
+<script>
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var filename = "excelfile.xlsx";
+var data = [[1,2,3],[true, false, null, "hello"],["foo","bar",new Date("2014-02-19T14:30Z"), "0.3"], ["baz", null, "qux"]]
+var ws_name = "hello";
+
+if(typeof console !== 'undefined') console.log(new Date());
+var wb = XLSX.utils.book_new(), ws = XLSX.utils.aoa_to_sheet(data);
+ 
+XLSX.utils.book_append_sheet(wb, ws, ws_name);
+
+if(typeof console !== 'undefined') console.log(new Date());
+XLSX.writeFile(wb, filename);
+if(typeof console !== 'undefined') console.log(new Date());
+</script>
+
+</body>
+</html>
