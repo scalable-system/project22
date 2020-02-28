@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body onload='document.form.product-title-1.focus()'>
+  <body>
     <script src="js/scripts.js"></script>
     <div class="container-fluid"> 
       <div class="row">

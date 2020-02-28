@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
   <style>
   .fakeimg {
     height: 200px;
@@ -35,7 +36,6 @@
   </head>
 
   <body>
-
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Internal System</h1>
@@ -90,30 +90,30 @@
 
             <div class="form-group">
                 <label for="product-title-1">Product Title</label>
-                <textarea required class="form-control" name="product-title-1" id="product-title-1" placeholder="Product Title 150->200 characters" oninput="onInput(this.id, 'product-title-1-output');" rows="2"></textarea>
+                <textarea required class="form-control" name="product-title-1" id="product-title-1" placeholder="Product Title 150->200 characters" onkeyup="onInput(this.id, 'product-title-1-output');" onkeydown="onInput(this.id, 'product-title-1-output');" rows="2"></textarea>
                 <h4 id="product-title-1-output"></h4>
                 <small id="product-title-1-Div" class="alert alert-warning form-text text-muted">Product Title should be between 150 and 200 characters</small>
             </div>
 
             <div class="form-group">
                 <label for="product-title-1">Quantity</label>
-                <input required class="form-control" type="number" name="quantity-1" id="quantity-1" placeholder="Quantity 15->20"  oninput="onInput(this.id, 'quantity-1-output');">
+                <input required class="form-control" type="number" name="quantity-1" id="quantity-1" placeholder="Quantity 15->20" onkeyup="onInput(this.id, 'quantity-1-output');" onkeydown="onInput(this.id, 'quantity-1-output');">
                 <h4 id="quantity-1-output"></h4>
                 <small id="quantity-1-Div" class="alert alert-warning form-text text-muted">Quantity should be a number between 15 and 20</small>
             </div>
 
             <div class="form-group">
               <label for="bullet-point-1">1st Bullet Point</label>
-              <textarea required class="form-control" name="bullet-point-1" id="bullet-point-1" placeholder="1st Bullet Point 0 -> 500"  oninput="onInput(this.id, 'bullet-point-1-output');" rows="3"></textarea>
+              <textarea required class="form-control" name="bullet-point-1" id="bullet-point-1" placeholder="1st Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'quantity-1-output');" onkeydown="onInput(this.id, 'bullet-point-1-output');" rows="3"></textarea>
               <h4 id="bullet-point-1-output"></h4>
-              <small id="bullet-point-1-Div" class="alert alert-warning form-text text-muted">This bullet point can not be more than 500 characters</small>
+              <small id="bullet-point-1-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters</small>
           </div>
 
           <div class="form-group">
             <label for="bullet-point-2">2nd Bullet Point</label>
-            <textarea required class="form-control" name="bullet-point-2" id="bullet-point-2" placeholder="2nd Bullet Point 0 -> 500"  oninput="onInput(this.id, 'bullet-point-2-output');" rows="3"></textarea>
+            <textarea required class="form-control" name="bullet-point-2" id="bullet-point-2" placeholder="2nd Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'quantity-1-output');" onkeydown="onInput(this.id, 'bullet-point-2-output');" rows="3"></textarea>
             <h4 id="bullet-point-2-output"></h4>
-            <small id="bullet-point-2-Div" class="alert alert-warning form-text text-muted">This bullet point can not be more than 500 characters</small>
+            <small id="bullet-point-2-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters</small>
         </div>
 
             <input onclick=""  type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
@@ -129,6 +129,8 @@
   <p>Footer</p>
 </div>
 
-<script src="js/scripts.js"></script>
+  <!-- Javascript Files -->
+  <script src="js/scripts.js"></script>
+
 </body>
 </html>

@@ -111,5 +111,5 @@ function validation(index, id, divId, type, min, max, name){
 
 validation(1, 'product-title-1', 'product-title-1-Div', 1, 150, 200, 'Product Title');
 validation(2, 'quantity-1', 'quantity-1-Div', 2, 15, 20, 'Quantity');
-validation(3, 'bullet-point-1', 'bullet-point-1-Div', 1, 0, 500, '1st Bullet Point');
-validation(4, 'bullet-point-2', 'bullet-point-2-Div', 1, 0, 500, '2nd Bullet Point');
+validation(3, 'bullet-point-1', 'bullet-point-1-Div', 1, 50, 500, '1st Bullet Point');
+validation(4, 'bullet-point-2', 'bullet-point-2-Div', 1, 50, 500, '2nd Bullet Point');
