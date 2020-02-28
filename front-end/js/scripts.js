@@ -1,3 +1,8 @@
+function onInput(input, output) {
+    var x = document.getElementById(input).value;
+    document.getElementById(output).innerHTML = x;
+}
+
 function validation(index, id, divId, type, min, max, name){
     var myInput = document.getElementById(id);
     var letter = document.getElementById(divId);
