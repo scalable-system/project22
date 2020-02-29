@@ -1,5 +1,7 @@
 function onInput(input, output) {
     var x = document.getElementById(input).value;
+    document.getElementById(output).classList.add("visibleOutput");
+    document.getElementById(output).classList.remove("hiddenOutput");
     document.getElementById(output).innerHTML = x;
 }
 

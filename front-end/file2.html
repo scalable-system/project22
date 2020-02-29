@@ -31,6 +31,22 @@
         left: -10px;
         content: "✖";
       }
+  
+  .output{
+    margin: 15px 0 0 0;
+    border: none;
+    width: 100%;
+    max-height: 120px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+  }
+  .hiddenOutput{
+    display: none;
+  }
+  .visibleOutput{
+    display: block;
+  }
     </style>
 
   </head>
@@ -91,7 +107,7 @@
             <div class="form-group">
                 <label for="product-title-1">Product Title</label>
                 <textarea required class="form-control" name="product-title-1" id="product-title-1" placeholder="Product Title 150->200 characters" onkeyup="onInput(this.id, 'product-title-1-output');" onkeydown="onInput(this.id, 'product-title-1-output');" rows="2"></textarea>
-                <h4 id="product-title-1-output"></h4>
+                <textarea disabled class="output hiddenOutput" id="product-title-1-output"></textarea>
                 <small id="product-title-1-Div" class="alert alert-warning form-text text-muted">Product Title should be between 150 and 200 characters</small>
             </div>
 
