@@ -86,7 +86,7 @@
     <div class="col-sm-8">
       <h2>Amazon Product Addition</h2>
       <h5>Add a Prodcut</h5>
-        <form name="form" action="" method="POST">
+        <form name="form" id="theForm" action="" method="POST">
 
             <div class="form-group">
                 <label for="product-title-1">Product Title</label>
@@ -104,14 +104,14 @@
 
             <div class="form-group">
               <label for="bullet-point-1">1st Bullet Point</label>
-              <textarea required class="form-control" name="bullet-point-1" id="bullet-point-1" placeholder="1st Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'quantity-1-output');" onkeydown="onInput(this.id, 'bullet-point-1-output');" rows="3"></textarea>
+              <textarea required class="form-control" name="bullet-point-1" id="bullet-point-1" placeholder="1st Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'bullet-point-1-output');" onkeydown="onInput(this.id, 'bullet-point-1-output');" rows="3"></textarea>
               <h4 id="bullet-point-1-output"></h4>
               <small id="bullet-point-1-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters</small>
           </div>
 
           <div class="form-group">
             <label for="bullet-point-2">2nd Bullet Point</label>
-            <textarea required class="form-control" name="bullet-point-2" id="bullet-point-2" placeholder="2nd Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'quantity-1-output');" onkeydown="onInput(this.id, 'bullet-point-2-output');" rows="3"></textarea>
+            <textarea required class="form-control" name="bullet-point-2" id="bullet-point-2" placeholder="2nd Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'bullet-point-2-output');" onkeydown="onInput(this.id, 'bullet-point-2-output');" rows="3"></textarea>
             <h4 id="bullet-point-2-output"></h4>
             <small id="bullet-point-2-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters</small>
         </div>
@@ -131,6 +131,7 @@
 
   <!-- Javascript Files -->
   <script src="js/scripts.js"></script>
+  <script src="js/excel.js"></script>
 
 </body>
 </html>
