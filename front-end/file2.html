@@ -47,6 +47,12 @@
   .visibleOutput{
     display: block;
   }
+  .hideSub{
+    visibility: hidden;
+  }
+  .showSub{
+    visibility: visible;
+  }
     </style>
 
   </head>
@@ -102,37 +108,37 @@
     <div class="col-sm-8">
       <h2>Amazon Product Addition</h2>
       <h5>Add a Prodcut</h5>
-        <form name="form" id="theForm" action="" method="POST">
+        <form name="form" id="theForm" action="excel.html" method="POST">
 
             <div class="form-group">
                 <label for="product-title-1">Product Title</label>
                 <textarea required class="form-control" name="product-title-1" id="product-title-1" placeholder="Product Title 150->200 characters" onkeyup="onInput(this.id, 'product-title-1-output');" onkeydown="onInput(this.id, 'product-title-1-output');" rows="2"></textarea>
                 <textarea disabled class="output hiddenOutput" id="product-title-1-output"></textarea>
-                <small id="product-title-1-Div" class="alert alert-warning form-text text-muted">Product Title should be between 150 and 200 characters</small>
+                <small id="product-title-1-Div" class="alert alert-warning form-text text-muted">Product Title should be between 150 and 200 characters &nbsp; | &nbsp;Current number of characters is <span id="product-title-1-char"></span></small>
             </div>
 
             <div class="form-group">
                 <label for="product-title-1">Quantity</label>
                 <input required class="form-control" type="number" name="quantity-1" id="quantity-1" placeholder="Quantity 15->20" onkeyup="onInput(this.id, 'quantity-1-output');" onkeydown="onInput(this.id, 'quantity-1-output');">
                 <h4 id="quantity-1-output"></h4>
-                <small id="quantity-1-Div" class="alert alert-warning form-text text-muted">Quantity should be a number between 15 and 20</small>
+                <small id="quantity-1-Div" class="alert alert-warning form-text text-muted">Quantity should be a number between 15 and 20 </small>
             </div>
 
             <div class="form-group">
               <label for="bullet-point-1">1st Bullet Point</label>
               <textarea required class="form-control" name="bullet-point-1" id="bullet-point-1" placeholder="1st Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'bullet-point-1-output');" onkeydown="onInput(this.id, 'bullet-point-1-output');" rows="3"></textarea>
               <h4 id="bullet-point-1-output"></h4>
-              <small id="bullet-point-1-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters</small>
+              <small id="bullet-point-1-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters &nbsp; | &nbsp;Current number of characters is <span id="bullet-point-1-char"></span></small>
           </div>
 
           <div class="form-group">
             <label for="bullet-point-2">2nd Bullet Point</label>
             <textarea required class="form-control" name="bullet-point-2" id="bullet-point-2" placeholder="2nd Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'bullet-point-2-output');" onkeydown="onInput(this.id, 'bullet-point-2-output');" rows="3"></textarea>
             <h4 id="bullet-point-2-output"></h4>
-            <small id="bullet-point-2-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters</small>
+            <small id="bullet-point-2-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters &nbsp; | &nbsp;Current number of characters is <span id="bullet-point-2-char"></span></small>
         </div>
 
-            <input onclick=""  type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
+            <input onclick="window.open();" id="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
         </form>
           
         <h3 id="Alert"></h3>
