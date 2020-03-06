@@ -116,4 +116,7 @@ validation(1, 'product-title-1', 'product-title-1-Div', 1, 150, 200, 'Product Ti
 validation(2, 'quantity-1', 'quantity-1-Div', 2, 15, 20, 'Quantity');
 validation(3, 'bullet-point-1', 'bullet-point-1-Div', 1, 50, 500, '1st Bullet Point');
 validation(4, 'bullet-point-2', 'bullet-point-2-Div', 1, 50, 500, '2nd Bullet Point');
+validation(5, 'bullet-point-3', 'bullet-point-3-Div', 1, 50, 500, '3rd Bullet Point');
+validation(6, 'bullet-point-4', 'bullet-point-4-Div', 1, 50, 500, '4th Bullet Point');
+validation(7, 'bullet-point-5', 'bullet-point-5-Div', 1, 50, 400, '5th Bullet Point');
 

@@ -47,12 +47,11 @@
   .visibleOutput{
     display: block;
   }
-  .hideSub{
-    visibility: hidden;
+  .form-group{
+    padding: 15px 0;
+    border-bottom: 1px solid black;
   }
-  .showSub{
-    visibility: visible;
-  }
+  
     </style>
 
   </head>
@@ -138,7 +137,28 @@
             <small id="bullet-point-2-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters &nbsp; | &nbsp;Current number of characters is <span id="bullet-point-2-char"></span></small>
         </div>
 
-            <input onclick="window.open();" id="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
+        <div class="form-group">
+          <label for="bullet-point-3">3rd Bullet Point</label>
+          <textarea required class="form-control" name="bullet-point-3" id="bullet-point-3" placeholder="3rd Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'bullet-point-3-output');" onkeydown="onInput(this.id, 'bullet-point-3-output');" rows="3"></textarea>
+          <h4 id="bullet-point-3-output"></h4>
+          <small id="bullet-point-3-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters &nbsp; | &nbsp;Current number of characters is <span id="bullet-point-3-char"></span></small>
+        </div>
+
+        <div class="form-group">
+          <label for="bullet-point-4">4th Bullet Point</label>
+          <textarea required class="form-control" name="bullet-point-4" id="bullet-point-4" placeholder="4th Bullet Point 0 -> 500" onkeyup="onInput(this.id, 'bullet-point-4-output');" onkeydown="onInput(this.id, 'bullet-point-4-output');" rows="3"></textarea>
+          <h4 id="bullet-point-4-output"></h4>
+          <small id="bullet-point-4-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 500 characters &nbsp; | &nbsp;Current number of characters is <span id="bullet-point-4-char"></span></small>
+        </div>
+
+        <div class="form-group">
+          <label for="bullet-point-5">5th Bullet Point</label>
+          <textarea required class="form-control" name="bullet-point-5" id="bullet-point-5" placeholder="5th Bullet Point 0 -> 400" onkeyup="onInput(this.id, 'bullet-point-5-output');" onkeydown="onInput(this.id, 'bullet-point-5-output');" rows="3"></textarea>
+          <h4 id="bullet-point-5-output"></h4>
+          <small id="bullet-point-5-Div" class="alert alert-warning form-text text-muted">This bullet point should be between 50 and 400 characters &nbsp; | &nbsp;Current number of characters is <span id="bullet-point-5-char"></span></small>
+        </div>
+
+            <input onclick="window.open();" id="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="Create Excel Sheet">
         </form>
           
         <h3 id="Alert"></h3>
@@ -147,8 +167,29 @@
   </div>
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+<div class="div" style="background-color:lightgray; margin:20px 0 0 0; padding: 30px 5% 15px 10%;">
+  <div class="row">
+    <div class="col-md-3">
+      <h5>Links</h5>
+      <a href="#">Home</a><br>
+      <a href="#">Excel Product Inserter</a>
+    </div>
+    <div class="col-md-3">
+      <h5>Need Help?</h5>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col-md-3">
+      <h5>More Stuff</h5>
+      <a href="">Link 1</a><br>
+      <a href="">Link 2</a>
+    </div>
+    <div class="col-md-3">
+      <h5>Creators</h5>
+      <a href="">@assadah</a><br>
+      <a href="">@DinShpati</a><br>
+      <a href="">@TahidurRahman</a>
+    </div>
+  </div>
 </div>
 
   <!-- Javascript Files -->
