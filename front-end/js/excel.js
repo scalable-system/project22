@@ -28,6 +28,16 @@ document.getElementById('theForm').onsubmit = function() {
     inputArr('6', 'bullet-point-5', "Bullet Point 5", document.getElementById("bullet-point-5").value, document.getElementById("bullet-point-5").value.length);
 
     console.log(inputArray);
+    
+    var data = inputArray;
+
+    if(typeof console !== 'undefined') console.log(new Date());
+    var wb = XLSX.utils.book_new(), ws = XLSX.utils.aoa_to_sheet(data);
+    
+    XLSX.utils.book_append_sheet(wb, ws, ws_name);
+    if(typeof console !== 'undefined') console.log(new Date());
+    XLSX.writeFile(wb, filename);
+    if(typeof console !== 'undefined') console.log(new Date());
 
     return false;
 }
