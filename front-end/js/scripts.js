@@ -31,7 +31,7 @@ function validation(index, id, divId, type, min, max, name){
 
     //Character count
     if(document.getElementById(id + "-char")){
-        document.getElementById(id + "-char").innerHTML = myInput.value.length;
+        document.getElementById(id + "-char").innerHTML = myInput.value.length +" characters";
     }
     // Validate lowercase letters <span id="quantity-1-char"></span>
     var lowerCaseLetters = /[a-z]/g;
