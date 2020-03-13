@@ -110,7 +110,18 @@ var ws_name = "hello";
       <h2>Amazon Product Addition</h2>
       <h5>Add a Prodcut</h5>
         <form name="form" id="theForm" action="" method="POST">
-
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="seller-sku-usa-1">Seller SKU - USA</label>
+                    <input type="text" required class="form-control" name="seller-sku-usa-1" id="seller-sku-usa-1" placeholder="GAOTek-GLS-UA101 (for USA)">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="seller-sku-canada-1">Seller SKU - Canada</label>
+                    <input type="text" required class="form-control" name="seller-sku-canada-1" id="seller-sku-canada-1" placeholder="GAOTek-GLS-UA101 (for USA)">
+                </div>
+            </div>
+            
             <div class="form-group">
                 <label for="product-title-1">Product Title</label>
                 <textarea required class="form-control" name="product-title-1" id="product-title-1" placeholder="GAOTek EDA PDA Key Features Group 1| Key Features Group 2| Key Features Group 3| Key Features Group 4| Key Features Group 5| Key Features Group 6 |GAOTek ID" onkeyup="onInput(this.id, 'product-title-1-output');" onkeydown="onInput(this.id, 'product-title-1-output');" rows="2"></textarea>
